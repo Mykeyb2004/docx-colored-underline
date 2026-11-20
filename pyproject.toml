@@ -1,0 +1,17 @@
+[project]
+name = "docx-colored-underline"
+version = "0.1.0"
+description = "为 Word (.docx) 文档中的彩色文本自动添加双下划线（或自定义下划线样式）并另存为新版本"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+docx-colored-underline = "underline_colored_text:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["underline_colored_text.py"]
